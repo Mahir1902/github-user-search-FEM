@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import SearchBar from '@/components/SearchBar'
+import UserSummary from '@/components/UserSummary'
 import { Space_Mono } from 'next/font/google'
 
 const space_mono = Space_Mono({
@@ -12,12 +13,14 @@ const space_mono = Space_Mono({
 
 export default function Home() {
   return (
-    <div className={`h-[100vh] w-[100vw] flex flex-col justify-center items-center ${space_mono.className} bg-[#F6F8FF]`}>
-      <div className='w-full max-w-[327px] md:max-w-[573px] lg:max-w-[730px]'>
-
+    <div className='h-[100vh] w-[100vw] bg-[#F6F8FF] '>
+      <div className={`min-h-screen w-full max-w-[730px] px-6  flex flex-col md:pt-[10rem] overflow-x-hidden ${space_mono.className} border border-red-500 mx-auto`}>
+      
       <Header/> 
-      <SearchBar/>  
-      </div>
+      <SearchBar/> 
+      <UserSummary/>     
     </div>
+    </div>
+    
   )
 }

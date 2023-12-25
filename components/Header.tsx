@@ -8,14 +8,17 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className='flex justify-between border-red-500 border '>
-        <Link href='/'>
-            <p className='text-2xl font-bold'>devfinder</p>
+    <header className='pb-9 min-w-full'>
+      <div className='flex justify-between items-center gap-2'>
+        <Link href='/' className='text-2xl font-bold text-blackBlue'>
+            devfinder
         </Link>
-        <div className='flex justify-between gap-3'>
-            <p className='text-sm text-[#697C9A] tracking-[2.5px] mt-1 font-bold'>DARK</p>
-            <MoonIcon className="text-2xl mt-1"/>
-        </div>
+        <button className='flex items-center group'>
+            <span className='text-sm text-grayBlue tracking-[2.5px] mt-1 font-bold pr-4 inline-block group-hover:text-blackBlue'>DARK</span>
+            <MoonIcon  className="h-[20px] w-[20px] mt-1 inline-block fill-current group-hover:text-blackBlue text-grayBlue" />
+            
+        </button>
+      </div>
     </header>
   )
 }

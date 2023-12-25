@@ -74,3 +74,28 @@
     @apply bg-background text-foreground;
   }
 } */
+
+
+html,body {
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    /* Light mode colors */
+
+      --bright-blue: #0079FF;
+      --gray-blue: #697C9A;
+      --dark-blue: #4B6A9B;
+      --black-blue: #2B3442;
+      --white-gray: #F6F8FF;
+      --light-white: #FEFEFE
+
+      
+  }
+}

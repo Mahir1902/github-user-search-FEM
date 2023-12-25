@@ -50,6 +50,14 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        
+        lightBlue: 'var(--bright-blue)',
+        grayBlue: 'var(--gray-blue)',
+        darkBlue: 'var(--dark-blue)',
+        blackBlue: 'var(--black-blue)',
+        whiteGray: 'var(--white-gray)',
+        lightWhite: 'var(--light-white)',
+
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,5 +80,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/forms')],
 }
