@@ -31,7 +31,6 @@ export const useUserStore = create<userStore>((set) => ({
             
             const {data} = await axios.get(`https://api.github.com/users/${username}`)
 
-            console.log(data)
     
             if(!data) {
                 throw new Error('User not found')

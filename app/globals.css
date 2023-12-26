@@ -83,6 +83,7 @@ html,body {
 
 *{
   box-sizing: border-box;
+  @apply transition-colors duration-100
 }
 
 @layer base {
@@ -94,8 +95,13 @@ html,body {
       --dark-blue: #4B6A9B;
       --black-blue: #2B3442;
       --white-gray: #F6F8FF;
-      --light-white: #FEFEFE
+      --light-white: #FEFEFE;
 
-      
+
+      /* Dark mode colors */
+      --plain-white: #FFFFFF;
+      --almost-black: #141D2F;
+      --ash-blue:#1E2A47;
   }
 }
+

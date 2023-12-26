@@ -57,6 +57,9 @@ module.exports = {
         blackBlue: 'var(--black-blue)',
         whiteGray: 'var(--white-gray)',
         lightWhite: 'var(--light-white)',
+        plainWhite: 'var(--plain-white)',
+        almostBlack: 'var(--almost-black)',
+        ashBlue: 'var(--ash-blue)',
 
       },
       borderRadius: {
@@ -80,5 +83,7 @@ module.exports = {
       },
     },
   },
+  
   plugins: [require("tailwindcss-animate"), require('@tailwindcss/forms')],
+  
 }

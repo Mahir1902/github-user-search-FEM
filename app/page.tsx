@@ -13,8 +13,8 @@ const space_mono = Space_Mono({
 
 export default function Home() {
   return (
-    <div className='h-[100vh] w-[100vw] bg-[#F6F8FF] '>
-      <div className={`min-h-screen w-full max-w-[730px] px-6  flex flex-col md:pt-[10rem] overflow-x-hidden ${space_mono.className} border border-red-500 mx-auto`}>
+    <div className='h-[100vh] w-[100vw] bg-[#F6F8FF] dark:bg-almostBlack'>
+      <div className={`min-h-screen w-full max-w-[730px] px-6  flex flex-col md:pt-[10rem] overflow-x-hidden ${space_mono.className} mx-auto`}>
       
       <Header/> 
       <SearchBar/> 
